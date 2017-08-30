@@ -1,0 +1,91 @@
+PODS:
+  - Action (3.1.1):
+    - RxCocoa (~> 3.4)
+    - RxSwift (~> 3.4)
+  - Alamofire (4.5.0)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Swift (3.2.1):
+    - CocoaLumberjack/Default
+  - Differentiator (2.0.1)
+  - IQKeyboardManagerSwift (4.0.13)
+  - KeychainAccess (3.0.2)
+  - Nimble (7.0.1)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - Quick (1.1.0)
+  - RxAlamofire (3.0.3):
+    - RxAlamofire/Core (= 3.0.3)
+  - RxAlamofire/Core (3.0.3):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxBlocking (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (2.0.1):
+    - Differentiator (~> 2.0)
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxGesture (1.1.1):
+    - RxCocoa (~> 3.6)
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
+  - RxSwiftExt (2.5.1):
+    - RxSwiftExt/Core (= 2.5.1)
+  - RxSwiftExt/Core (2.5.1):
+    - RxSwift (~> 3.4)
+  - RxTest (3.6.1):
+    - RxSwift (~> 3.6)
+  - SCLAlertView (0.7.0)
+  - SlackTextViewController (1.9.5)
+  - SwiftyJSON (3.1.4)
+  - SwiftyUserDefaults (3.0.0)
+
+DEPENDENCIES:
+  - Action
+  - CocoaLumberjack/Swift
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - Nimble
+  - NVActivityIndicatorView
+  - Quick
+  - RxAlamofire
+  - RxBlocking
+  - RxCocoa
+  - RxDataSources
+  - RxGesture
+  - RxSwift
+  - RxSwiftExt
+  - RxTest
+  - SCLAlertView
+  - SlackTextViewController
+  - SwiftyJSON
+  - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Action: e224bd151fe2e057f4189b4a9df0dc5d21264a9e
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  Differentiator: 8555f40f5df08beb9bcf225724af295b90e738cb
+  IQKeyboardManagerSwift: fb399c4cddcd8d9bbcd2d0c7c81ed290b61c088e
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
+  RxBlocking: 4f4bd5732e8b952e54ae8a57739bcfb645de12bc
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: 93c805010d4f5970e5204829a182bcdceab5adb5
+  RxGesture: a297957f2940b50f7073d1e7ff0eaa3f87cd27a5
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxSwiftExt: ec25c6df68d15ad6fe326792d60452b52e83d606
+  RxTest: 1d00348a7848c91ab5bf5d197d2378aa6b2bb356
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
+
+PODFILE CHECKSUM: c87c71415029b86efd68c3bdf633044a3d2b58b5
+
+COCOAPODS: 1.3.1
