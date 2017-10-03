@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001269">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000936">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cocoapods" time="4.35093">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: scan" time="20.839973">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: slather" time="2.568771">
+        
+          <failure message="/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:230:in `block in execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:226:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:226:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:148:in `trigger_action_by_name'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:35:in `block (2 levels) in parsing_binding'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:104:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:64:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:303:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/cli_tools_distributor.rb:66:in `take_off'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/bin/fastlane:20:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:22:in `load'&#10;/usr/local/bin/fastlane:22:in `&lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli/exec.rb:74:in `load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli/exec.rb:74:in `kernel_load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli/exec.rb:27:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli.rb:362:in `exec'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli.rb:22:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/cli.rb:13:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/exe/bundle:30:in `block in &lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-1.15.4/exe/bundle:22:in `&lt;top (required)&gt;'&#10;/usr/local/bin/bundle:22:in `load'&#10;/usr/local/bin/bundle:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'slather coverage --coveralls --ignore Pods/\* --scheme SocialMessenger --workspace SocialMessenger.xcworkspace SocialMessenger.xcodeproj' was 1 instead of 0.&#10;Slathering...&#10;/Library/Ruby/Gems/2.3.0/gems/slather-2.4.3/lib/slather/coverage_service/coveralls.rb:150:in `coveralls_coverage_data': Environment variable `TRAVIS_JOB_ID` not set. Is this running on a travis build? (StandardError)&#10;	from /Library/Ruby/Gems/2.3.0/gems/slather-2.4.3/lib/slather/coverage_service/coveralls.rb:218:in `post'&#10;	from /Library/Ruby/Gems/2.3.0/gems/slather-2.4.3/lib/slather/command/coverage_command.rb:94:in `post'&#10;	from /Library/Ruby/Gems/2.3.0/gems/slather-2.4.3/lib/slather/command/coverage_command.rb:56:in `execute'&#10;	from /Library/Ruby/Gems/2.3.0/gems/clamp-0.6.5/lib/clamp/command.rb:67:in `run'&#10;	from /Library/Ruby/Gems/2.3.0/gems/clamp-0.6.5/lib/clamp/subcommand/execution.rb:11:in `execute'&#10;	from /Library/Ruby/Gems/2.3.0/gems/clamp-0.6.5/lib/clamp/command.rb:67:in `run'&#10;	from /Library/Ruby/Gems/2.3.0/gems/clamp-0.6.5/lib/clamp/command.rb:132:in `run'&#10;	from /Library/Ruby/Gems/2.3.0/gems/slather-2.4.3/bin/slather:17:in `&lt;top (required)&gt;'&#10;	from /usr/local/bin/slather:22:in `load'&#10;	from /usr/local/bin/slather:22:in `&lt;main&gt;'&#10;" />
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

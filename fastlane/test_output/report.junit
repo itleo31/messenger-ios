@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='SocialMessengerTests.xctest' tests='1' failures='0'>
+  <testsuite name='SocialMessengerTests.SocialMessengerTests' tests='1' failures='0'>
+    <testcase classname='SocialMessengerTests.SocialMessengerTests' name='testExample' time='0.001'/>
+  </testsuite>
+</testsuites>
