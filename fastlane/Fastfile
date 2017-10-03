@@ -31,12 +31,14 @@ platform :ios do
       )
 
     isCircleCI = ENV["CIRCLECI"] || false
+    isTravis = ENV["TRAVIS"] || false
 
     slather(
       proj: "SocialMessenger.xcodeproj",
       workspace: "SocialMessenger.xcworkspace",
       scheme: "SocialMessenger",
       circleci: isCircleCI,
+      travis: isTravis,
       coveralls: true,
       ignore: ['Pods/*']
     )
