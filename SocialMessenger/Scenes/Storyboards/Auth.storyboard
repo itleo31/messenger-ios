@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="qKO-Uq-9aZ">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BAj-kH-2J2" customClass="LogInViewController" customModule="SocialMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80u-iZ-SEw"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEC-SC-bsb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uvl-T3-gCr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-dS-CqK">
+                                <rect key="frame" x="31.5" y="303.5" width="311" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="ButtonLogInFB"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H5h-dS-CqK" firstAttribute="centerY" secondItem="Uvl-T3-gCr" secondAttribute="centerY" id="4h8-WN-EXe"/>
+                            <constraint firstItem="H5h-dS-CqK" firstAttribute="centerX" secondItem="Uvl-T3-gCr" secondAttribute="centerX" id="ZsG-Du-ueR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginFBButton" destination="H5h-dS-CqK" id="oVl-ko-P8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwg-dC-xA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ButtonLogInFB" width="311" height="60"/>
+    </resources>
+</document>

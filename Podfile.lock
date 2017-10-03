@@ -1,19 +1,34 @@
 PODS:
-  - Action (3.1.1):
-    - RxCocoa (~> 3.4)
-    - RxSwift (~> 3.4)
-  - Alamofire (4.5.0)
+  - Alamofire (4.5.1)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
   - CocoaLumberjack/Default (3.2.1)
   - CocoaLumberjack/Swift (3.2.1):
     - CocoaLumberjack/Default
-  - Differentiator (2.0.1)
-  - IQKeyboardManagerSwift (4.0.13)
-  - KeychainAccess (3.0.2)
-  - Nimble (7.0.1)
-  - NVActivityIndicatorView (3.7.0):
-    - NVActivityIndicatorView/Presenter (= 3.7.0)
-  - NVActivityIndicatorView/Presenter (3.7.0)
-  - Quick (1.1.0)
+  - Differentiator (2.0.2)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.27.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.27.0):
+    - FBSDKCoreKit
+  - IQKeyboardManagerSwift (5.0.3)
+  - KeychainAccess (3.1.0)
+  - Nimble (7.0.2)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - Quick (1.2.0)
   - RxAlamofire (3.0.3):
     - RxAlamofire/Core (= 3.0.3)
   - RxAlamofire/Core (3.0.3):
@@ -23,10 +38,10 @@ PODS:
     - RxSwift (~> 3.6)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
-  - RxDataSources (2.0.1):
+  - RxDataSources (2.0.2):
     - Differentiator (~> 2.0)
-    - RxCocoa (~> 3.0)
-    - RxSwift (~> 3.0)
+    - RxCocoa (>= 3.6.1)
+    - RxSwift (>= 3.6.1)
   - RxGesture (1.1.1):
     - RxCocoa (~> 3.6)
     - RxSwift (~> 3.6)
@@ -41,10 +56,12 @@ PODS:
   - SlackTextViewController (1.9.5)
   - SwiftyJSON (3.1.4)
   - SwiftyUserDefaults (3.0.0)
+  - Swinject (2.1.1)
 
 DEPENDENCIES:
-  - Action
   - CocoaLumberjack/Swift
+  - FacebookCore
+  - FacebookLogin
   - IQKeyboardManagerSwift
   - KeychainAccess
   - Nimble
@@ -62,21 +79,26 @@ DEPENDENCIES:
   - SlackTextViewController
   - SwiftyJSON
   - SwiftyUserDefaults
+  - Swinject
 
 SPEC CHECKSUMS:
-  Action: e224bd151fe2e057f4189b4a9df0dc5d21264a9e
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
-  Differentiator: 8555f40f5df08beb9bcf225724af295b90e738cb
-  IQKeyboardManagerSwift: fb399c4cddcd8d9bbcd2d0c7c81ed290b61c088e
-  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
-  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
-  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
-  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Differentiator: caa9b3957981a2ac8e6b2eac8a676af461caa604
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: ebc6c5f5b3f0e72396041050e2266781a38ac587
+  FBSDKLoginKit: 887be4b7452e1c5a3cc4485ce152529965a0c41e
+  IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
   RxBlocking: 4f4bd5732e8b952e54ae8a57739bcfb645de12bc
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxDataSources: 93c805010d4f5970e5204829a182bcdceab5adb5
+  RxDataSources: 7f190474a93a206c082c2d74c4cc9c8f7bea4feb
   RxGesture: a297957f2940b50f7073d1e7ff0eaa3f87cd27a5
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   RxSwiftExt: ec25c6df68d15ad6fe326792d60452b52e83d606
@@ -85,7 +107,8 @@ SPEC CHECKSUMS:
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
 
-PODFILE CHECKSUM: c87c71415029b86efd68c3bdf633044a3d2b58b5
+PODFILE CHECKSUM: dfa83af7a3934330de838be12fa6eeba79bfe137
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0.beta.1

@@ -9,11 +9,35 @@
 /* Begin PBXBuildFile section */
 		3313415BD7AAE026DE8051C9 /* Pods_SocialMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA754CF40FF86A6EEC957F4 /* Pods_SocialMessenger.framework */; };
 		9D1789FB064C8C3B6573471B /* Pods_SocialMessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9059E3BF5E232275F979876 /* Pods_SocialMessengerTests.framework */; };
+		CF28DB7A1F83E51100FE5F5F /* AppComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF28DB791F83E51100FE5F5F /* AppComponents.swift */; };
 		CF3B43621F577347008EC4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAB71F57725200237D4C /* AppDelegate.swift */; };
 		CF95EA9E1F5771F200237D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95EA9D1F5771F200237D4C /* Assets.xcassets */; };
 		CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */; };
+		CFCF92451F59521600531261 /* AuthManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92441F59521600531261 /* AuthManaging.swift */; };
+		CFCF92471F59523000531261 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92461F59523000531261 /* AuthManager.swift */; };
+		CFCF924A1F59554800531261 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92491F59554800531261 /* LoginViewController.swift */; };
+		CFCF924C1F59569600531261 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF924B1F59569600531261 /* AuthModels.swift */; };
+		CFCF924E1F5956D400531261 /* AuthCredentialsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF924D1F5956D400531261 /* AuthCredentialsStorage.swift */; };
+		CFCF92511F59590700531261 /* EventsLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92501F59590700531261 /* EventsLogging.swift */; };
+		CFCF92531F59594400531261 /* EventsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92521F59594400531261 /* EventsLogger.swift */; };
+		CFCF92571F595CD700531261 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92561F595CD700531261 /* Configs.swift */; };
+		CFCF925A1F5965CB00531261 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF92591F5965CB00531261 /* Auth.storyboard */; };
+		CFCF925C1F59698E00531261 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF925B1F59698E00531261 /* LogInViewModel.swift */; };
+		CFCF925F1F596D8A00531261 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF925E1F596D8A00531261 /* ViewControllerFactory.swift */; };
+		CFCF92621F596EE400531261 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF92611F596EE400531261 /* Home.storyboard */; };
+		CFCF92641F596EEF00531261 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92631F596EEF00531261 /* HomeViewController.swift */; };
 		CFDC490A1F577889000C612C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDC49091F577889000C612C /* LaunchScreen.storyboard */; };
 		CFDC490C1F577895000C612C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDC490B1F577895000C612C /* Main.storyboard */; };
+		CFDC491B1F57799B000C612C /* AppDelegate+RootTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */; };
+		CFDC491C1F57799B000C612C /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC490F1F57799B000C612C /* BindableType.swift */; };
+		CFDC491D1F57799B000C612C /* DataChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49101F57799B000C612C /* DataChange.swift */; };
+		CFDC491E1F57799B000C612C /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49111F57799B000C612C /* DataValidator.swift */; };
+		CFDC49201F57799B000C612C /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49131F57799B000C612C /* LoadingIndicator.swift */; };
+		CFDC49211F57799B000C612C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49141F57799B000C612C /* Logger.swift */; };
+		CFDC49221F57799B000C612C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49151F57799B000C612C /* Notifications.swift */; };
+		CFDC49231F57799B000C612C /* RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49161F57799B000C612C /* RxExt.swift */; };
+		CFDC49261F57799B000C612C /* UIKit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49191F57799B000C612C /* UIKit+Rx.swift */; };
+		CFDC49271F57799B000C612C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC491A1F57799B000C612C /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +57,7 @@
 		846F52B4805DCAAF98C76500 /* Pods-SocialMessengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMessengerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMessengerTests/Pods-SocialMessengerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9059E3BF5E232275F979876 /* Pods_SocialMessengerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMessengerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E56C00BD1D3CC4FEC75DFA /* Pods-SocialMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMessenger/Pods-SocialMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		CF28DB791F83E51100FE5F5F /* AppComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponents.swift; sourceTree = "<group>"; };
 		CF95EA931F5771F200237D4C /* SocialMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF95EA9D1F5771F200237D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF95EAA21F5771F200237D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,8 +65,31 @@
 		CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMessengerTests.swift; sourceTree = "<group>"; };
 		CF95EAAD1F5771F200237D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF95EAB71F57725200237D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFCF92441F59521600531261 /* AuthManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManaging.swift; sourceTree = "<group>"; };
+		CFCF92461F59523000531261 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CFCF92491F59554800531261 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CFCF924B1F59569600531261 /* AuthModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		CFCF924D1F5956D400531261 /* AuthCredentialsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCredentialsStorage.swift; sourceTree = "<group>"; };
+		CFCF92501F59590700531261 /* EventsLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsLogging.swift; sourceTree = "<group>"; };
+		CFCF92521F59594400531261 /* EventsLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsLogger.swift; sourceTree = "<group>"; };
+		CFCF92561F595CD700531261 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		CFCF92591F5965CB00531261 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CFCF925B1F59698E00531261 /* LogInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		CFCF925E1F596D8A00531261 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		CFCF92611F596EE400531261 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CFCF92631F596EEF00531261 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFDC49091F577889000C612C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFDC490B1F577895000C612C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+RootTransition.swift"; sourceTree = "<group>"; };
+		CFDC490F1F57799B000C612C /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		CFDC49101F57799B000C612C /* DataChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChange.swift; sourceTree = "<group>"; };
+		CFDC49111F57799B000C612C /* DataValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
+		CFDC49131F57799B000C612C /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		CFDC49141F57799B000C612C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CFDC49151F57799B000C612C /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		CFDC49161F57799B000C612C /* RxExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExt.swift; sourceTree = "<group>"; };
+		CFDC49191F57799B000C612C /* UIKit+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Rx.swift"; sourceTree = "<group>"; };
+		CFDC491A1F57799B000C612C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				CF95EAB71F57725200237D4C /* AppDelegate.swift */,
+				CFCF92561F595CD700531261 /* Configs.swift */,
+				CFCF925E1F596D8A00531261 /* ViewControllerFactory.swift */,
+				CF28DB791F83E51100FE5F5F /* AppComponents.swift */,
 			);
 			path = AppConfig;
 			sourceTree = "<group>";
@@ -137,6 +188,9 @@
 		CF95EAB81F57725200237D4C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CFCF924F1F5958F400531261 /* EventsLogger */,
+				CFCF92431F5951F500531261 /* Auth */,
+				CFDC490D1F57799B000C612C /* Common */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -144,6 +198,9 @@
 		CF95EAB91F57725200237D4C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CFCF92601F596EDB00531261 /* Home */,
+				CFCF92481F59554000531261 /* LogIn */,
+				CFCF92581F5965B900531261 /* Storyboards */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -155,6 +212,69 @@
 				CFDC490B1F577895000C612C /* Main.storyboard */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		CFCF92431F5951F500531261 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF92441F59521600531261 /* AuthManaging.swift */,
+				CFCF92461F59523000531261 /* AuthManager.swift */,
+				CFCF924B1F59569600531261 /* AuthModels.swift */,
+				CFCF924D1F5956D400531261 /* AuthCredentialsStorage.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CFCF92481F59554000531261 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF92491F59554800531261 /* LoginViewController.swift */,
+				CFCF925B1F59698E00531261 /* LogInViewModel.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		CFCF924F1F5958F400531261 /* EventsLogger */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF92501F59590700531261 /* EventsLogging.swift */,
+				CFCF92521F59594400531261 /* EventsLogger.swift */,
+			);
+			path = EventsLogger;
+			sourceTree = "<group>";
+		};
+		CFCF92581F5965B900531261 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF92591F5965CB00531261 /* Auth.storyboard */,
+				CFCF92611F596EE400531261 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CFCF92601F596EDB00531261 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF92631F596EEF00531261 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CFDC490D1F57799B000C612C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */,
+				CFDC490F1F57799B000C612C /* BindableType.swift */,
+				CFDC49101F57799B000C612C /* DataChange.swift */,
+				CFDC49111F57799B000C612C /* DataValidator.swift */,
+				CFDC49131F57799B000C612C /* LoadingIndicator.swift */,
+				CFDC49141F57799B000C612C /* Logger.swift */,
+				CFDC49151F57799B000C612C /* Notifications.swift */,
+				CFDC49161F57799B000C612C /* RxExt.swift */,
+				CFDC49191F57799B000C612C /* UIKit+Rx.swift */,
+				CFDC491A1F57799B000C612C /* Utils.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCF925A1F5965CB00531261 /* Auth.storyboard in Resources */,
+				CFCF92621F596EE400531261 /* Home.storyboard in Resources */,
 				CFDC490C1F577895000C612C /* Main.storyboard in Resources */,
 				CF95EA9E1F5771F200237D4C /* Assets.xcassets in Resources */,
 				CFDC490A1F577889000C612C /* LaunchScreen.storyboard in Resources */,
@@ -269,10 +391,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SocialMessenger/Pods-SocialMessenger-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -286,13 +412,18 @@
 				"${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -306,6 +437,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackTextViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -411,7 +543,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCF924A1F59554800531261 /* LoginViewController.swift in Sources */,
+				CFDC491B1F57799B000C612C /* AppDelegate+RootTransition.swift in Sources */,
+				CFDC491C1F57799B000C612C /* BindableType.swift in Sources */,
 				CF3B43621F577347008EC4B2 /* AppDelegate.swift in Sources */,
+				CFCF924C1F59569600531261 /* AuthModels.swift in Sources */,
+				CF28DB7A1F83E51100FE5F5F /* AppComponents.swift in Sources */,
+				CFCF92571F595CD700531261 /* Configs.swift in Sources */,
+				CFCF92641F596EEF00531261 /* HomeViewController.swift in Sources */,
+				CFCF92471F59523000531261 /* AuthManager.swift in Sources */,
+				CFCF925C1F59698E00531261 /* LogInViewModel.swift in Sources */,
+				CFDC49271F57799B000C612C /* Utils.swift in Sources */,
+				CFDC49221F57799B000C612C /* Notifications.swift in Sources */,
+				CFCF92531F59594400531261 /* EventsLogger.swift in Sources */,
+				CFDC49201F57799B000C612C /* LoadingIndicator.swift in Sources */,
+				CFDC491D1F57799B000C612C /* DataChange.swift in Sources */,
+				CFDC491E1F57799B000C612C /* DataValidator.swift in Sources */,
+				CFCF92511F59590700531261 /* EventsLogging.swift in Sources */,
+				CFDC49261F57799B000C612C /* UIKit+Rx.swift in Sources */,
+				CFCF924E1F5956D400531261 /* AuthCredentialsStorage.swift in Sources */,
+				CFCF92451F59521600531261 /* AuthManaging.swift in Sources */,
+				CFDC49211F57799B000C612C /* Logger.swift in Sources */,
+				CFDC49231F57799B000C612C /* RxExt.swift in Sources */,
+				CFCF925F1F596D8A00531261 /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +705,7 @@
 				DEVELOPMENT_TEAM = 28B4UGC4GQ;
 				INFOPLIST_FILE = SocialMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khanhpham.SocialMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

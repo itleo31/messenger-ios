@@ -12,12 +12,13 @@ target 'SocialMessenger' do
   pod 'CocoaLumberjack/Swift'
   pod 'KeychainAccess'
   pod 'SwiftyUserDefaults'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 
   # ReactiveX
   pod 'RxSwift' 
   pod 'RxCocoa'  
   pod 'RxAlamofire'
-  pod 'Action'
   pod 'RxSwiftExt'
   pod 'RxGesture'
   pod 'RxDataSources'
@@ -29,6 +30,7 @@ target 'SocialMessenger' do
   
   pod 'IQKeyboardManagerSwift'
 
+  pod 'Swinject'
 
   target 'SocialMessengerTests' do
     inherit! :search_paths
