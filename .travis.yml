@@ -15,3 +15,6 @@ install:
 
 script:
   - bundle exec fastlane test
+
+after_success:
+  - bundle exec fastlane coverage

@@ -30,6 +30,10 @@ platform :ios do
       device: "iPhone 7"
       )
 
+  end
+
+  desc "Generate coverage"
+  lane :coverage do
     isCircleCI = ENV["CIRCLECI"] || false
     isTravis = ENV["TRAVIS"] || false
 
