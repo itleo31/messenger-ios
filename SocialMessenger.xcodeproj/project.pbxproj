@@ -19,6 +19,10 @@
 		CFB31CFD1F84E25A00D6B226 /* DataValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */; };
 		CFB31CFF1F84E4B200D6B226 /* AppComponentsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CFE1F84E4B200D6B226 /* AppComponentsSpec.swift */; };
 		CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D001F84E5FD00D6B226 /* ViewControllerFactorySpec.swift */; };
+		CFB31D041F8526AF00D6B226 /* EventsLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D031F8526AF00D6B226 /* EventsLoggerSpec.swift */; };
+		CFB31D061F85277F00D6B226 /* BindableTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D051F85277F00D6B226 /* BindableTypeSpec.swift */; };
+		CFB31D081F8528CD00D6B226 /* LoadingIndicatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D071F8528CD00D6B226 /* LoadingIndicatorSpec.swift */; };
+		CFB31D0A1F8529AC00D6B226 /* RxExtSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D091F8529AC00D6B226 /* RxExtSpec.swift */; };
 		CFCF92451F59521600531261 /* AuthManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92441F59521600531261 /* AuthManaging.swift */; };
 		CFCF92471F59523000531261 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92461F59523000531261 /* AuthManager.swift */; };
 		CFCF924A1F59554800531261 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92491F59554800531261 /* LoginViewController.swift */; };
@@ -77,6 +81,10 @@
 		CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidatorSpec.swift; sourceTree = "<group>"; };
 		CFB31CFE1F84E4B200D6B226 /* AppComponentsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponentsSpec.swift; sourceTree = "<group>"; };
 		CFB31D001F84E5FD00D6B226 /* ViewControllerFactorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactorySpec.swift; sourceTree = "<group>"; };
+		CFB31D031F8526AF00D6B226 /* EventsLoggerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLoggerSpec.swift; sourceTree = "<group>"; };
+		CFB31D051F85277F00D6B226 /* BindableTypeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTypeSpec.swift; sourceTree = "<group>"; };
+		CFB31D071F8528CD00D6B226 /* LoadingIndicatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorSpec.swift; sourceTree = "<group>"; };
+		CFB31D091F8529AC00D6B226 /* RxExtSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtSpec.swift; sourceTree = "<group>"; };
 		CFCF92441F59521600531261 /* AuthManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManaging.swift; sourceTree = "<group>"; };
 		CFCF92461F59523000531261 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CFCF92491F59554800531261 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +248,7 @@
 		CFB31CF31F84DAB900D6B226 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CFB31D021F8526A300D6B226 /* EventLogger */,
 				CFB31CFB1F84E24D00D6B226 /* Common */,
 				CFB31CF41F84DB2D00D6B226 /* Auth */,
 			);
@@ -260,8 +269,19 @@
 			isa = PBXGroup;
 			children = (
 				CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */,
+				CFB31D051F85277F00D6B226 /* BindableTypeSpec.swift */,
+				CFB31D071F8528CD00D6B226 /* LoadingIndicatorSpec.swift */,
+				CFB31D091F8529AC00D6B226 /* RxExtSpec.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CFB31D021F8526A300D6B226 /* EventLogger */ = {
+			isa = PBXGroup;
+			children = (
+				CFB31D031F8526AF00D6B226 /* EventsLoggerSpec.swift */,
+			);
+			path = EventLogger;
 			sourceTree = "<group>";
 		};
 		CFCF92431F5951F500531261 /* Auth */ = {
@@ -624,10 +644,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB31CFD1F84E25A00D6B226 /* DataValidatorSpec.swift in Sources */,
+				CFB31D041F8526AF00D6B226 /* EventsLoggerSpec.swift in Sources */,
 				CFB31CF61F84DB4200D6B226 /* AuthModelSpec.swift in Sources */,
 				CFB31CF81F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift in Sources */,
 				CFB31CFA1F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift in Sources */,
+				CFB31D061F85277F00D6B226 /* BindableTypeSpec.swift in Sources */,
+				CFB31D0A1F8529AC00D6B226 /* RxExtSpec.swift in Sources */,
 				CFB31CFF1F84E4B200D6B226 /* AppComponentsSpec.swift in Sources */,
+				CFB31D081F8528CD00D6B226 /* LoadingIndicatorSpec.swift in Sources */,
 				CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */,
 				CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */,
 			);

@@ -32,6 +32,11 @@ extension ObservableType {
             .map { _ in element }
     }
     
+    public static func just(_ element: Self.E, dueTime: RxTimeInterval, scheduler: SchedulerType) -> Observable<Self.E> {
+        return Observable<Int>.timer(dueTime, scheduler: scheduler)
+            .map { _ in element }
+    }
+    
     public static func error(_ error: Error, dueTime: RxTimeInterval) -> Observable<Self.E> {
         return Observable<Int>.timer(dueTime, scheduler: MainScheduler.instance)
             .flatMap { _ in Observable<Self.E>.error(error) }
