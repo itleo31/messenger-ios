@@ -20,7 +20,7 @@ protocol AuthCredentialStorageType {
 
 class KeyChainAuthCredentialStorage: AuthCredentialStorageType {
     
-    let keychain = Keychain(service: Bundle.main.bundleIdentifier ?? "joltmate")
+    private let keychain = Keychain(service: Bundle.main.bundleIdentifier ?? "socialmessenger")
     
     private let tokenKey = "auth.token"
     

@@ -13,6 +13,12 @@
 		CF3B43621F577347008EC4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAB71F57725200237D4C /* AppDelegate.swift */; };
 		CF95EA9E1F5771F200237D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95EA9D1F5771F200237D4C /* Assets.xcassets */; };
 		CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */; };
+		CFB31CF61F84DB4200D6B226 /* AuthModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF51F84DB4200D6B226 /* AuthModelSpec.swift */; };
+		CFB31CF81F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF71F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift */; };
+		CFB31CFA1F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF91F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift */; };
+		CFB31CFD1F84E25A00D6B226 /* DataValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */; };
+		CFB31CFF1F84E4B200D6B226 /* AppComponentsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CFE1F84E4B200D6B226 /* AppComponentsSpec.swift */; };
+		CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31D001F84E5FD00D6B226 /* ViewControllerFactorySpec.swift */; };
 		CFCF92451F59521600531261 /* AuthManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92441F59521600531261 /* AuthManaging.swift */; };
 		CFCF92471F59523000531261 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92461F59523000531261 /* AuthManager.swift */; };
 		CFCF924A1F59554800531261 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF92491F59554800531261 /* LoginViewController.swift */; };
@@ -65,6 +71,12 @@
 		CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMessengerTests.swift; sourceTree = "<group>"; };
 		CF95EAAD1F5771F200237D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF95EAB71F57725200237D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFB31CF51F84DB4200D6B226 /* AuthModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelSpec.swift; sourceTree = "<group>"; };
+		CFB31CF71F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAuthCredentialStorageSpec.swift; sourceTree = "<group>"; };
+		CFB31CF91F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAuthCredentialStorageSpec.swift; sourceTree = "<group>"; };
+		CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidatorSpec.swift; sourceTree = "<group>"; };
+		CFB31CFE1F84E4B200D6B226 /* AppComponentsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponentsSpec.swift; sourceTree = "<group>"; };
+		CFB31D001F84E5FD00D6B226 /* ViewControllerFactorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactorySpec.swift; sourceTree = "<group>"; };
 		CFCF92441F59521600531261 /* AuthManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManaging.swift; sourceTree = "<group>"; };
 		CFCF92461F59523000531261 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CFCF92491F59554800531261 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +180,8 @@
 		CF95EAAA1F5771F200237D4C /* SocialMessengerTests */ = {
 			isa = PBXGroup;
 			children = (
+				CFB31CF31F84DAB900D6B226 /* Components */,
+				CFB31CF21F84DAAC00D6B226 /* AppConfig */,
 				CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */,
 				CF95EAAD1F5771F200237D4C /* Info.plist */,
 			);
@@ -212,6 +226,42 @@
 				CFDC490B1F577895000C612C /* Main.storyboard */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		CFB31CF21F84DAAC00D6B226 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				CFB31CFE1F84E4B200D6B226 /* AppComponentsSpec.swift */,
+				CFB31D001F84E5FD00D6B226 /* ViewControllerFactorySpec.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		CFB31CF31F84DAB900D6B226 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFB31CFB1F84E24D00D6B226 /* Common */,
+				CFB31CF41F84DB2D00D6B226 /* Auth */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CFB31CF41F84DB2D00D6B226 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CFB31CF51F84DB4200D6B226 /* AuthModelSpec.swift */,
+				CFB31CF71F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift */,
+				CFB31CF91F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CFB31CFB1F84E24D00D6B226 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CFB31CFC1F84E25A00D6B226 /* DataValidatorSpec.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		CFCF92431F5951F500531261 /* Auth */ = {
@@ -573,7 +623,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB31CFD1F84E25A00D6B226 /* DataValidatorSpec.swift in Sources */,
+				CFB31CF61F84DB4200D6B226 /* AuthModelSpec.swift in Sources */,
+				CFB31CF81F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift in Sources */,
+				CFB31CFA1F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift in Sources */,
+				CFB31CFF1F84E4B200D6B226 /* AppComponentsSpec.swift in Sources */,
 				CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */,
+				CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
