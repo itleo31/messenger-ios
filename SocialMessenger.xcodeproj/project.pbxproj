@@ -13,6 +13,7 @@
 		CF3B43621F577347008EC4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAB71F57725200237D4C /* AppDelegate.swift */; };
 		CF95EA9E1F5771F200237D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95EA9D1F5771F200237D4C /* Assets.xcassets */; };
 		CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */; };
+		CFA18A1D1F854A06003AC8B9 /* UIKitRxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA18A1C1F854A06003AC8B9 /* UIKitRxSpec.swift */; };
 		CFB31CF61F84DB4200D6B226 /* AuthModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF51F84DB4200D6B226 /* AuthModelSpec.swift */; };
 		CFB31CF81F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF71F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift */; };
 		CFB31CFA1F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB31CF91F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift */; };
@@ -40,7 +41,6 @@
 		CFDC490C1F577895000C612C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDC490B1F577895000C612C /* Main.storyboard */; };
 		CFDC491B1F57799B000C612C /* AppDelegate+RootTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */; };
 		CFDC491C1F57799B000C612C /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC490F1F57799B000C612C /* BindableType.swift */; };
-		CFDC491D1F57799B000C612C /* DataChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49101F57799B000C612C /* DataChange.swift */; };
 		CFDC491E1F57799B000C612C /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49111F57799B000C612C /* DataValidator.swift */; };
 		CFDC49201F57799B000C612C /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49131F57799B000C612C /* LoadingIndicator.swift */; };
 		CFDC49211F57799B000C612C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC49141F57799B000C612C /* Logger.swift */; };
@@ -75,6 +75,7 @@
 		CF95EAAB1F5771F200237D4C /* SocialMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMessengerTests.swift; sourceTree = "<group>"; };
 		CF95EAAD1F5771F200237D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF95EAB71F57725200237D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFA18A1C1F854A06003AC8B9 /* UIKitRxSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRxSpec.swift; sourceTree = "<group>"; };
 		CFB31CF51F84DB4200D6B226 /* AuthModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelSpec.swift; sourceTree = "<group>"; };
 		CFB31CF71F84DC3000D6B226 /* KeyChainAuthCredentialStorageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAuthCredentialStorageSpec.swift; sourceTree = "<group>"; };
 		CFB31CF91F84DE5C00D6B226 /* UserDefaultsAuthCredentialStorageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAuthCredentialStorageSpec.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		CFDC490B1F577895000C612C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+RootTransition.swift"; sourceTree = "<group>"; };
 		CFDC490F1F57799B000C612C /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
-		CFDC49101F57799B000C612C /* DataChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChange.swift; sourceTree = "<group>"; };
 		CFDC49111F57799B000C612C /* DataValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
 		CFDC49131F57799B000C612C /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		CFDC49141F57799B000C612C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -272,6 +272,7 @@
 				CFB31D051F85277F00D6B226 /* BindableTypeSpec.swift */,
 				CFB31D071F8528CD00D6B226 /* LoadingIndicatorSpec.swift */,
 				CFB31D091F8529AC00D6B226 /* RxExtSpec.swift */,
+				CFA18A1C1F854A06003AC8B9 /* UIKitRxSpec.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -335,7 +336,6 @@
 			children = (
 				CFDC490E1F57799B000C612C /* AppDelegate+RootTransition.swift */,
 				CFDC490F1F57799B000C612C /* BindableType.swift */,
-				CFDC49101F57799B000C612C /* DataChange.swift */,
 				CFDC49111F57799B000C612C /* DataValidator.swift */,
 				CFDC49131F57799B000C612C /* LoadingIndicator.swift */,
 				CFDC49141F57799B000C612C /* Logger.swift */,
@@ -627,7 +627,6 @@
 				CFDC49221F57799B000C612C /* Notifications.swift in Sources */,
 				CFCF92531F59594400531261 /* EventsLogger.swift in Sources */,
 				CFDC49201F57799B000C612C /* LoadingIndicator.swift in Sources */,
-				CFDC491D1F57799B000C612C /* DataChange.swift in Sources */,
 				CFDC491E1F57799B000C612C /* DataValidator.swift in Sources */,
 				CFCF92511F59590700531261 /* EventsLogging.swift in Sources */,
 				CFDC49261F57799B000C612C /* UIKit+Rx.swift in Sources */,
@@ -654,6 +653,7 @@
 				CFB31D081F8528CD00D6B226 /* LoadingIndicatorSpec.swift in Sources */,
 				CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */,
 				CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */,
+				CFA18A1D1F854A06003AC8B9 /* UIKitRxSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
