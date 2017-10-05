@@ -11,6 +11,7 @@
 		9D1789FB064C8C3B6573471B /* Pods_SocialMessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9059E3BF5E232275F979876 /* Pods_SocialMessengerTests.framework */; };
 		CF178A4D1F85C3EF00C3E472 /* AppDelegateRootTransitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF178A4C1F85C3EF00C3E472 /* AppDelegateRootTransitionSpec.swift */; };
 		CF178A4F1F85D5D200C3E472 /* UtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF178A4E1F85D5D200C3E472 /* UtilSpec.swift */; };
+		CF178A511F85E54300C3E472 /* LoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF178A501F85E54300C3E472 /* LoggerSpec.swift */; };
 		CF28DB7A1F83E51100FE5F5F /* AppComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF28DB791F83E51100FE5F5F /* AppComponents.swift */; };
 		CF3B43621F577347008EC4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95EAB71F57725200237D4C /* AppDelegate.swift */; };
 		CF95EA9E1F5771F200237D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95EA9D1F5771F200237D4C /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		C5E56C00BD1D3CC4FEC75DFA /* Pods-SocialMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMessenger/Pods-SocialMessenger.release.xcconfig"; sourceTree = "<group>"; };
 		CF178A4C1F85C3EF00C3E472 /* AppDelegateRootTransitionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRootTransitionSpec.swift; sourceTree = "<group>"; };
 		CF178A4E1F85D5D200C3E472 /* UtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilSpec.swift; sourceTree = "<group>"; };
+		CF178A501F85E54300C3E472 /* LoggerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerSpec.swift; sourceTree = "<group>"; };
 		CF28DB791F83E51100FE5F5F /* AppComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponents.swift; sourceTree = "<group>"; };
 		CF95EA931F5771F200237D4C /* SocialMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF95EA9D1F5771F200237D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				CFA18A1C1F854A06003AC8B9 /* UIKitRxSpec.swift */,
 				CF178A4C1F85C3EF00C3E472 /* AppDelegateRootTransitionSpec.swift */,
 				CF178A4E1F85D5D200C3E472 /* UtilSpec.swift */,
+				CF178A501F85E54300C3E472 /* LoggerSpec.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				CFB31D061F85277F00D6B226 /* BindableTypeSpec.swift in Sources */,
 				CFB31D0A1F8529AC00D6B226 /* RxExtSpec.swift in Sources */,
 				CFB31CFF1F84E4B200D6B226 /* AppComponentsSpec.swift in Sources */,
+				CF178A511F85E54300C3E472 /* LoggerSpec.swift in Sources */,
 				CFB31D081F8528CD00D6B226 /* LoadingIndicatorSpec.swift in Sources */,
 				CF95EAAC1F5771F200237D4C /* SocialMessengerTests.swift in Sources */,
 				CFB31D011F84E5FD00D6B226 /* ViewControllerFactorySpec.swift in Sources */,

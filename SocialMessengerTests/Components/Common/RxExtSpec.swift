@@ -54,6 +54,19 @@ class RxExtSpec: QuickSpec {
                 XCTAssertEqual(res.events, correctEvents)
             }
             
+            it("error(_:dueTime:) should receive events at correct time") {
+                let err = NSError(domain: "test", code: 1, userInfo: nil)
+                let observable = Observable<Int>.error(err, dueTime: 300, scheduler: testScheduler)
+                
+                let res = testScheduler.start { observable.asObservable() }
+                
+                let correctEvents: [Recorded<Event<Int>>] = [
+                    error(500, err)
+                ]
+                
+                XCTAssertEqual(res.events, correctEvents)
+            }
+            
             it("onNextAndCompleted(_:) should send next and completed events") {
                 let observable = Observable<Int>.create({ (observer) -> Disposable in
                     observer.onNext(5)

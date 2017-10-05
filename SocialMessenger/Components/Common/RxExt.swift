@@ -27,18 +27,13 @@ extension ObservableType {
                 , onSubscribed: { variable.value = true })
     }
     
-    public static func just(_ element: Self.E, dueTime: RxTimeInterval) -> Observable<Self.E> {
-        return Observable<Int>.timer(dueTime, scheduler: MainScheduler.instance)
-            .map { _ in element }
-    }
-    
-    public static func just(_ element: Self.E, dueTime: RxTimeInterval, scheduler: SchedulerType) -> Observable<Self.E> {
+    public static func just(_ element: Self.E, dueTime: RxTimeInterval, scheduler: SchedulerType = MainScheduler.instance) -> Observable<Self.E> {
         return Observable<Int>.timer(dueTime, scheduler: scheduler)
             .map { _ in element }
     }
     
-    public static func error(_ error: Error, dueTime: RxTimeInterval) -> Observable<Self.E> {
-        return Observable<Int>.timer(dueTime, scheduler: MainScheduler.instance)
+    public static func error(_ error: Error, dueTime: RxTimeInterval, scheduler: SchedulerType = MainScheduler.instance) -> Observable<Self.E> {
+        return Observable<Int>.timer(dueTime, scheduler: scheduler)
             .flatMap { _ in Observable<Self.E>.error(error) }
     }
     
