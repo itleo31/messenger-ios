@@ -53,14 +53,6 @@ protocol StringWrapper {
 }
 
 extension Optional where Wrapped: StringWrapper {
-    var isNilOrEmpty: Bool {
-        switch self {
-        case .some(let wrapped):
-            return wrapped.asString.isEmpty
-        default:
-            return true
-        }
-    }
     
     var notEmptyValue: String? {
         switch self {
@@ -163,7 +155,7 @@ public extension NSRegularExpression {
     }
 }
 
-func isISO10Available() -> Bool {
+func isIOS10Available() -> Bool {
     if #available(iOS 10.0, *) {
         return true
     } else {
