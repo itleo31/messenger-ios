@@ -18,6 +18,39 @@ import XCTest
 class UIKitRxSpec: QuickSpec {
     override func spec() {
         describe("UIKitRxSpec") {
+            var disposeBag: DisposeBag!
+            
+            beforeEach {
+                disposeBag = DisposeBag()
+            }
+            
+            describe("Variable") {
+                
+                describe("bidirectionalBind(with:)") {
+                    
+                    var control: UITextField!
+                    var variable: Variable<String>!
+                    
+                    beforeEach {
+                        control = UITextField()
+                        variable = Variable<String>("")
+                        variable.bidirectionalBind(with: control.rx.text)
+                            .disposed(by: disposeBag)
+                    }
+                    
+                    it("should bind value from variable to control") {
+                        variable.value = "abc"
+                        expect(control.text).toEventually(equal("abc"))
+                    }
+                    
+                    it("should bind value from control to variable") {
+                        control.text = "abc"
+                        control.sendActions(for: .editingDidEndOnExit)
+                        expect(variable.value).toEventually(equal("abc"))
+                    }
+                }
+            }
+            
             describe("UIViewController") {
                 
                 var testScheduler: TestScheduler!

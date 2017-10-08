@@ -24,6 +24,13 @@ PODS:
     - FBSDKCoreKit
   - IQKeyboardManagerSwift (5.0.3)
   - KeychainAccess (3.1.0)
+  - Mockingjay (2.0.0):
+    - Mockingjay/Core (= 2.0.0)
+    - Mockingjay/XCTest (= 2.0.0)
+  - Mockingjay/Core (2.0.0):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.0):
+    - Mockingjay/Core
   - Nimble (7.0.2)
   - NVActivityIndicatorView (4.0.0):
     - NVActivityIndicatorView/Presenter (= 4.0.0)
@@ -57,6 +64,8 @@ PODS:
   - SwiftyJSON (3.1.4)
   - SwiftyUserDefaults (3.0.0)
   - Swinject (2.1.1)
+  - Toaster (2.1.0)
+  - URITemplate (2.0.2)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift
@@ -64,6 +73,7 @@ DEPENDENCIES:
   - FacebookLogin
   - IQKeyboardManagerSwift
   - KeychainAccess
+  - Mockingjay
   - Nimble
   - NVActivityIndicatorView
   - Quick
@@ -80,6 +90,7 @@ DEPENDENCIES:
   - SwiftyJSON
   - SwiftyUserDefaults
   - Swinject
+  - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
@@ -92,6 +103,7 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 887be4b7452e1c5a3cc4485ce152529965a0c41e
   IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
@@ -108,7 +120,9 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
   Swinject: afea49fd95f392b41171669f165842879c48fad6
+  Toaster: 8c3225dc465bef4aa57e147a288724576df8e439
+  URITemplate: d822aaa2f8ec9dcffffd13baa58bf9ee007e96cb
 
-PODFILE CHECKSUM: dfa83af7a3934330de838be12fa6eeba79bfe137
+PODFILE CHECKSUM: 3cfebe18757688b78fed05ce9730a665ec4267a6
 
 COCOAPODS: 1.3.1

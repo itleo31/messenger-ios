@@ -14,6 +14,7 @@ target 'SocialMessenger' do
   pod 'SwiftyUserDefaults'
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'Mockingjay'
 
   # ReactiveX
   pod 'RxSwift' 
@@ -27,6 +28,7 @@ target 'SocialMessenger' do
   pod 'NVActivityIndicatorView'
   pod 'SCLAlertView'
   pod 'SlackTextViewController'
+  pod 'Toaster'
   
   pod 'IQKeyboardManagerSwift'
 

@@ -24,6 +24,7 @@ class AppComponentsSpec: QuickSpec {
                 expect(appComponents.eventsLogger).notTo(beNil())
                 expect(appComponents.authManager).notTo(beNil())
                 expect(appComponents.loggerManager).notTo(beNil())
+                expect(appComponents.dataValidator).notTo(beNil())
             }
         }
     }

@@ -15,8 +15,10 @@ class LogInViewController: UIViewController, BindableType {
     typealias ViewModelType = LogInViewModel
     
     var viewModel: LogInViewModel!
-    @IBOutlet weak var loginFBButton: UIButton!
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     
     func bindViewModel() {
 //        loginFBButton.rx.action = viewModel.loginFacebookAction(viewController: self)

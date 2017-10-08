@@ -12,19 +12,14 @@ import RxCocoa
 import RxSwift
 
 protocol AuthManaging {
-    var authCredential: AuthCredential? { get set }
+    var authCredential: AuthCredential? { get }
     
-    @discardableResult
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]?) -> Bool
+    var authStateChangedObservable: Observable<Bool> { get }
     
-    @discardableResult
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool
+    func signUp(withEmail email: String, password: String) -> Observable<Void>
     
-    func login(social: SocialType, viewController: UIViewController?) -> Observable<AuthCredential>
-}
-
-enum SocialType {
-    case facebook
+    func signIn(withEmail email: String, password: String) -> Observable<Void>
+    
 }
 
 extension AuthManaging {

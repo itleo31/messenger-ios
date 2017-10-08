@@ -9,99 +9,48 @@
 import Foundation
 import RxCocoa
 import RxSwift
-import FacebookCore
-import FacebookLogin
-
-enum AuthError: Error {
-    case notAuthenticated
-    case userCancelled
-    case facebookDeclinedPermissions
-    case facebookError(Error)
-}
 
 class AuthManager: AuthManaging {
     
     let authStorage: AuthCredentialStorageType
-    let logginManager = LoginManager()
+    let authApiService: AuthApiServiceType
     
-    init(authStorage: AuthCredentialStorageType) {
+    private(set) var authCredential: AuthCredential? {
+        didSet {
+            self.authStateChangedSubject.onNext(self.isAuthenticated)
+        }
+    }
+    
+    private let authStateChangedSubject = PublishSubject<Bool>()
+    var authStateChangedObservable: Observable<Bool> {
+        return authStateChangedSubject.asObservable().shareReplay(1)
+    }
+    
+    init(authStorage: AuthCredentialStorageType, authApiService: AuthApiServiceType) {
         self.authStorage = authStorage
-    }
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]?) -> Bool {
-        return SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-        return SDKApplicationDelegate.shared.application(app, open: url, options: options)
-    }
-    
-    var authCredential: AuthCredential? {
-        get {
-            return authStorage.load()
-        }
-        set {
-            authStorage.save(newValue)
-        }
-    }
-    
-    func login(social: SocialType, viewController: UIViewController?) -> Observable<AuthCredential> {
+        self.authApiService = authApiService
+        self.authCredential = authStorage.load()
         
-        return logginManager.rx.logIn([.publicProfile, .userFriends], viewController: viewController)
-            .map { (loginResult) -> AuthCredential in
-                switch loginResult {
-                case .cancelled:
-                    throw AuthError.userCancelled
-                case .failed(let error):
-                    throw AuthError.facebookError(error)
-                case .success(_, let declinedPermissions, let token):
-                    if !declinedPermissions.isEmpty {
-                        throw AuthError.facebookDeclinedPermissions
-                    }
-                    
-                    return AuthCredential(token: token.authenticationToken)
-                }
-            }
-            .flatMapLatest { credentials -> Observable<AuthCredential> in
-                
-                self.authCredential = credentials
-                return .just(credentials)
-            }
+        self.authStateChangedSubject.onNext(self.isAuthenticated)
     }
-}
-
-extension LoginManager: ReactiveCompatible {
+    
+    func signUp(withEmail email: String, password: String) -> Observable<Void> {
+        return authApiService.signUp(withEmail: email, password: password)
+            .flatMapLatest { _ in self.authApiService.signIn(withEmail: email, password: password) }
+            .flatMapLatest({ (token) -> Observable<Void> in
+                self.authCredential = token
+                return .just(())
+            })
+    }
+    
+    func signIn(withEmail email: String, password: String) -> Observable<Void> {
+        return authApiService.signIn(withEmail: email, password: password)
+            .flatMapLatest({ (token) -> Observable<Void> in
+                self.authCredential = token
+                return .just(())
+            })
+    }
+    
     
 }
 
-extension Reactive where Base: LoginManager {
-    func logIn(_ permissions: [ReadPermission] = [.publicProfile],
-               viewController: UIViewController? = nil) -> Observable<LoginResult> {
-        return Observable.create({ [weak base] (observer) -> Disposable in
-            guard let manager = base else {
-                observer.onCompleted()
-                return Disposables.create()
-            }
-            
-            manager.logIn(permissions, viewController: viewController) { loginResult in
-                observer.onNextAndCompleted(loginResult)
-            }
-            return Disposables.create()
-        })
-    }
-    
-    func logIn(_ permissions: [PublishPermission] = [.publishActions],
-               viewController: UIViewController? = nil) -> Observable<LoginResult> {
-        return Observable.create({ [weak base] (observer) -> Disposable in
-            guard let manager = base else {
-                observer.onCompleted()
-                return Disposables.create()
-            }
-            
-            manager.logIn(permissions, viewController: viewController) { loginResult in
-                observer.onNextAndCompleted(loginResult)
-            }
-            return Disposables.create()
-        })
-    }
-}

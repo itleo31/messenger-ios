@@ -16,8 +16,8 @@ class ViewControllerFactory {
     
     private init() { }
     
-    func logInViewController() -> LogInViewController {
-        return authStoryboard.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+    func authNavigationController() -> UINavigationController {
+        return authStoryboard.instantiateViewController(withIdentifier: "AuthNavigationController") as! UINavigationController
     }
     
     func homeViewController() -> HomeViewController {

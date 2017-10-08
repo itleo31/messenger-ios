@@ -17,7 +17,7 @@ class ViewControllerFactorySpec: QuickSpec {
                 let factory = ViewControllerFactory.shared
                 
                 expect(factory.homeViewController()).notTo(beNil())
-                expect(factory.logInViewController()).notTo(beNil())
+                expect(factory.authNavigationController()).notTo(beNil())
             }
         }
     }

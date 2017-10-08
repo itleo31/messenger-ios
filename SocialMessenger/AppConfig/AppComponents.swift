@@ -29,6 +29,14 @@ class AppComponents {
         return this.container.resolve(EventsLogging.self)!
     }(self)
     
+    lazy var apiClient: ApiClientType = { this in
+        return this.container.resolve(ApiClientType.self)!
+    }(self)
+    
+    lazy var authApiService: AuthApiServiceType = { this in
+        return this.container.resolve(AuthApiServiceType.self)!
+    }(self)
+    
     lazy var authManager: AuthManaging = { this in
         return this.container.resolve(AuthManaging.self)!
     }(self)
@@ -37,11 +45,29 @@ class AppComponents {
         return LoggerManager.shared
     }()
     
+    lazy var dataValidator: DataValidator = {
+        return DataValidator.shared
+    }()
+    
     private func registerComponents() {
-        container.register(AuthCredentialStorageType.self) { _ in UserDefaultsAuthCredentialStorage() }
+        container.register(AuthCredentialStorageType.self) { _ in
+            if Configs.isDebug {
+                return UserDefaultsAuthCredentialStorage()
+            } else {
+                return KeyChainAuthCredentialStorage()
+            }
+        }
+        
+        container.register(ApiClientType.self) { _ in
+            return ApiClient(baseURL: Configs.apiBaseURL)
+        }
+        
+        container.register(AuthApiServiceType.self) { (resolver) in
+            return AuthApiService(apiClient: resolver.resolve(ApiClientType.self)!)
+        }
         
         container.register(AuthManaging.self) { (resolver) in
-            return AuthManager(authStorage: resolver.resolve(AuthCredentialStorageType.self)!)
+            return AuthManager(authStorage: resolver.resolve(AuthCredentialStorageType.self)!, authApiService: resolver.resolve(AuthApiServiceType.self)!)
         }
         
         container.register(EventsLogging.self) { _ in EventsLogger() }

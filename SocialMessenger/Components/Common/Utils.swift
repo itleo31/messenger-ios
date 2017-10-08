@@ -107,6 +107,10 @@ public extension String {
         return self.trimmingCharacters(in: whitespaces)
     }
     
+    public var trimmed: String {
+        return self.trimWhitespaces()
+    }
+    
     /// A new string made by deleting the extension
     /// (if any, and only the last) from the receiver.
     public var stringByDeletingPathExtension: String {

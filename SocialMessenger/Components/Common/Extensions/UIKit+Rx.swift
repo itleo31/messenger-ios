@@ -109,3 +109,28 @@ extension Reactive where Base: UINavigationController {
     
     
 }
+
+extension Variable {
+    func bidirectionalBind(with property: ControlProperty<Element?>) -> Disposable {
+        let varToProp = self.asDriver()
+            .asDriver()
+            .asObservable()
+            .bind(to: property)
+        
+        let propToVar = property
+            .subscribe(
+                onNext: { [weak self] val in
+                    guard let variable = self, let value = val else {
+                        return
+                    }
+                    
+                    variable.value = value
+                },
+                onCompleted: {
+                    varToProp.dispose()
+            }
+        )
+        
+        return CompositeDisposable(varToProp, propToVar)
+    }
+}
